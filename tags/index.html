@@ -99,19 +99,19 @@
             </li>
             
             <li class="menu-item">
-                <a href="/archives">
+                <a href="/档案丶archives">
                     Archives
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/tags">
+                <a href="/标签丶tags">
                     Tags
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/categories">
+                <a href="/分类丶categories">
                     Categories
                 </a>
             </li>
@@ -151,6 +151,11 @@
                 
             </section>
         
+        {% if theme.fireworks %}
+            <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+            <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+            <script type="text/javascript" src="/js/fireworks.js"></script>
+        {% endif %}
     </div>
 </div>
 
@@ -201,11 +206,11 @@
     <ul>
         
         <li>
-            <a class="footer-post" href="/categories/article/">article</a>
+            <a class="footer-post" href="/分类丶categories/article/">article</a>
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/test/">test</a>
+            <a class="footer-post" href="/分类丶categories/test/">test</a>
         </li>
         
     </ul>
